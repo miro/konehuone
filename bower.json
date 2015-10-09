@@ -12,6 +12,7 @@
     "angular-mocks": "~1.4.3",
     "angular-ui-router": "0.2.15",
     "bootstrap-sass": "3.3.5",
-    "animate.css": "~3.3.0"
+    "animate.css": "~3.3.0",
+    "viewports": "~0.6.4"
   }
 }
