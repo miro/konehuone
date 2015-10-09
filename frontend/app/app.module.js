@@ -1,9 +1,9 @@
 'use strict';
 
-angular.module('ngDevstack', [
+angular.module('konehuone', [
     'templates.app',
     'ngDevstack.conf',
-    'ngDevstack.home',
+    'konehuone.home',
     'ui.bootstrap',
     'ui.router'
 ]);

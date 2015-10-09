@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ngDevstack.home')
+angular.module('konehuone.home')
 
 .config(function ($stateProvider) {
     $stateProvider.state('home', {

@@ -9,7 +9,7 @@
 
 ngDescribe({
     name: 'home module',
-    modules: ['ngDevstack', 'ngDevstack.home'],
+    modules: ['konehuone', 'konehuone.home'],
     controllers: 'HomeCtrl',
     tests: function (deps) {
         it('should load', function () {

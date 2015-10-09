@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ngDevstack')
+angular.module('konehuone')
 
 .controller('AppCtrl', function ($rootScope, $scope) {
 

@@ -2,7 +2,7 @@
 
 ngDescribe({
     name: 'is current url',
-    modules: 'ngDevstack',
+    modules: 'konehuone',
     controllers: 'AppCtrl',
     inject: ['$location'],
     tests: function (deps) {
