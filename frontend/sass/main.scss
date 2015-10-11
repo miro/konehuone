@@ -1,3 +1,24 @@
 body {
-    padding-top: 20px;
+    background-color: $black;
+    color: $white;
+}
+
+.site__wrapper {
+    margin: 0 auto;
+    width: 90%;
+    max-width: $site-max-width;
+
+    background-image: url("background-shuttle.jpg");
+    background-position: fixed;
+}
+
+// These are what wraps "top level content"
+section {
+    width: 90%;
+    max-width: 960px;
+
+    margin: 0 auto 30px auto;
+    padding: 10px 20px;
+
+    background-color: $purple;
 }
