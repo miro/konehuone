@@ -2,7 +2,7 @@
 
 angular.module('konehuone')
 
-.config(function ($urlRouterProvider) {
+.config(function ($urlRouterProvider, $translateProvider, i18n) {
 
     $urlRouterProvider.otherwise('/');
     // Please enable mod rewrite in server.js when html5Mode is enabled.
@@ -38,4 +38,11 @@ angular.module('konehuone')
 
         return path + '/?' + params.join('&');
     });
+
+
+    // Setup i18n-stuff
+    $translateProvider.useSanitizeValueStrategy('escape');
+    $translateProvider.translations('fi', i18n.fi);
+    $translateProvider.translations('en', i18n.en);
+    $translateProvider.preferredLanguage('fi');
 });
