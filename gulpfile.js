@@ -298,7 +298,7 @@ gulp.task('watch', function () {
     runSequence('clean:build', ['styles:sass', 'scripts:lint', 'scripts:cacheTpls', 'assets:img', 'html:inject'], function () {
         bs.init({
             logPrefix: 'Browsersync',
-            open: !args.nobrowser,
+            open: args.openbrowser,
             reloadOnRestart: true,
             server: {
                 baseDir: './build',
