@@ -38,7 +38,7 @@ service.initialize = function(eventId) {
 }
 
 service.getEventInfo = function() {
-    return _.pick(state, 'eventAttendees', 'eventPosts');
+    return Promise.resolve(_.pick(state, 'eventAttendees', 'eventPosts'));
 };
 
 
@@ -99,7 +99,6 @@ function _updateEventPostCount() {
 
 
 
-
 function _getAccessToken() {
     return new Promise(function(resolve, reject) {
         request.get('https://graph.facebook.com/oauth/access_token?' +
@@ -124,12 +123,6 @@ function _getAccessToken() {
 
 function _extendTokenDuration(accessToken) {
     return new Promise(function(resolve, reject) {
-        // GET /oauth/access_token?
-        // grant_type=fb_exchange_token&
-        // client_id={app-id}&
-        // client_secret={app-secret}&
-        // fb_exchange_token={short-lived-token}
-
         request.get('https://graph.facebook.com/oauth/access_token?' +
             'client_id=' + FACEBOOK_APP_ID +
             '&client_secret=' + FACEBOOK_APP_SECRET +
@@ -145,7 +138,6 @@ function _extendTokenDuration(accessToken) {
                 else {
                     console.log('FB Access Token extended');
                     state.accessToken = _parseAccessTokenFromBody(body);
-
                     return resolve(state.accessToken);
                 }
             }
