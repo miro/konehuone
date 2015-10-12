@@ -12,7 +12,7 @@ angular.module('konehuone.home')
             }
         },
         data: {
-            pageTitle: 'Home'
+            pageTitle: 'Konehuone X'
         }
     });
 });
