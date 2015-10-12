@@ -6,12 +6,13 @@
 
 // General font styles
 body {
-    font-family: "Archive", "Arial Black", "Arial", sans-serif;
+    font-family: helvetica, arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
     // Archive is capital-only -font, uppercase all headers in case Archive can't
     // be loaded
+    font-family: "Archive", "Arial Black", "Arial", sans-serif;
     text-transform: uppercase;
 }
 

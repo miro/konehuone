@@ -1,0 +1,46 @@
+.competition-infos__wrapper {
+
+}
+
+.competition__content {
+    margin: 0 auto 10px auto;
+    width: 100%;
+    max-width: 400px;
+
+    cursor: pointer;
+
+}
+
+.competition__header {
+    width: 100%;
+    min-height: 60px;
+
+    padding-top: 5px;
+
+    // background-image: url('/assets/header-background-shuttle.jpg');
+    background-color: rgba($purple, 0.8);
+}
+
+.competition__title {
+    text-align: center;
+    margin: 5px;
+}
+
+.competition__powered-by {
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 0;
+}
+
+.competition__sponsor {
+    display: block;
+    height: 60px;
+
+    margin: 0 auto;
+
+    &:before {
+        content: 'by';
+        font-size: 15px;
+        margin: 0 5px 0 15px;
+    }
+}

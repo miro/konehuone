@@ -11,6 +11,7 @@ module.exports = function (config) {
             { pattern: 'bower_components/angular-mocks/angular-mocks.js', watched: false },
             { pattern: 'bower_components/angular-ui-router/release/angular-ui-router.js', watched: false },
             { pattern: 'bower_components/angular-translate/angular-translate.js', watched: false },
+            { pattern: 'bower_components/ng-lodash/build/ng-lodash.js', watched: false },
             // endbower
             'node_modules/ng-describe/dist/ng-describe.js',
             cfg.build + '/+(app|common)/**/*.module.js',
