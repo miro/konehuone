@@ -3,6 +3,7 @@ var express         = require('express');
 var app             = express();
 
 var facebook        = require('./facebook');
+var instagame       = require('./instagame');
 
 
 
@@ -20,6 +21,17 @@ facebook.initialize('1756954314531757'); // KH10 FB Event ID
 
 app.get('/api/fb-event/kpi', function(req, res) {
     res.send(facebook.getEventInfo());
+});
+
+app.get('/api/instagram/kpi', function(req, res) {
+    instagame.getTagInfo('konehuone')
+    .then(function(info) {
+        res.send(info);
+    })
+    .error(function(error) {
+        console.log('Error on Instagram data fetch', error);
+        res.sendStatus(500);
+    })
 });
 
 
