@@ -2,6 +2,8 @@
 var express         = require('express');
 var app             = express();
 
+var facebook        = require('./facebook');
+
 
 
 // # Configuration
@@ -9,11 +11,15 @@ var environment = process.env.NODE_ENV || 'development';
 var serverPort = process.env.PORT || 6001;
 
 
+// # Fetch
+facebook.initialize('1756954314531757'); // KH10 FB Event ID
+
+
 // # Routes
 // Static file serving point
 
-app.get('*', function(req, res) {
-	res.redirect('https://www.facebook.com/events/1756954314531757/');
+app.get('/api/fb-event/kpi', function(req, res) {
+    res.send(facebook.getEventInfo());
 });
 
 
