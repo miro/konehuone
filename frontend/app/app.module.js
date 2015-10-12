@@ -2,7 +2,7 @@
 
 angular.module('konehuone', [
     'templates.app',
-    'ngDevstack.conf',
+    'konehuone.conf',
     'konehuone.home',
 
     'konehuone.i18n',

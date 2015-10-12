@@ -1,12 +1,9 @@
 'use strict';
 
-angular.module('ngDevstack.conf', [])
+angular.module('konehuone.conf', [])
 
 .constant('conf', {
     api: {
-        login  : '/api/login',
-        logout : '/api/logout',
-        signup : '/api/signup',
-        expiry : '/api/expiry'
+        baseUrl: 'http://localhost:6001/api/'
     }
 });
