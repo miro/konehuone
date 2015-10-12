@@ -34,6 +34,12 @@ app.get('/api/competitions/kpi', function(req, res) {
 });
 
 
+// # Static file serving
+// TODO: use /dist on production
+app.use('/', express.static('../build/'));
+app.use('/bower_components', express.static('../bower_components/'));
+
+
 console.log('### Konehuone Server started!');
 console.log('on port', serverPort);
 app.listen(serverPort);
