@@ -21,30 +21,49 @@
 
     padding-top: 5px;
 
-    // background-image: url('/assets/header-background-shuttle.jpg');
     background-color: rgba($purple, 0.8);
-}
+    border-top: 10px solid $purple;
+    border-bottom: 8px solid $purple;
 
-.competition__title {
-    text-align: center;
-    margin: 5px;
-}
+    .competition__title {
+        text-align: center;
+        margin: 5px;
+    }
 
-.competition__powered-by {
-    text-align: center;
-    font-size: 10px;
-    margin-bottom: 0;
-}
+    .competition__powered-by {
+        text-align: center;
+        font-size: 10px;
+        margin-bottom: 0;
+    }
 
-.competition__sponsor {
-    display: block;
-    height: 60px;
+    .competition__sponsor {
+        display: block;
+        height: 60px;
 
-    margin: 0 auto;
+        margin: 0 auto;
 
-    &:before {
-        content: 'by';
-        font-size: 15px;
-        margin: 0 5px 0 15px;
+        &:before {
+            content: 'by';
+            font-size: 15px;
+            margin: 0 5px 0 15px;
+        }
     }
 }
+
+
+.competition__desc {
+    background-color: rgba($purple, 0.5);
+
+    .competition__state {
+        margin-top: 0;
+        background-color: $purple;
+        text-align: center;
+        padding: 5px 0 10px 0;
+
+        .hilight {
+            font-size: 25px;
+        }
+    }
+}
+
+
