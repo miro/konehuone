@@ -3,11 +3,15 @@
 }
 
 .competition__content {
-    margin: 0 auto 10px auto;
+    margin: 0 auto 20px auto;
     width: 100%;
     max-width: 400px;
 
     cursor: pointer;
+
+    &.minimized {
+        .competition__desc { display: none; }
+    }
 
 }
 

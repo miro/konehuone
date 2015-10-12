@@ -6,7 +6,13 @@ angular.module('konehuone.competitionInfos')
     var _ = lodash;
 
     // # Variables
+    $scope.uiClosed = {
+        jj1: true,
+        jj2: true,
+        rc: true
+    };
     $scope.compData = {};
+
 
 
     // # Functions
