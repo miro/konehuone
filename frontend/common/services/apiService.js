@@ -5,9 +5,20 @@ angular.module('konehuone.apiService', ['konehuone.conf'])
 .factory('apiService', function ($q, $http, conf) {
     var service = {};
 
+    // # Public functions
     service.getCompetitionData = function() {
+        return _doApiRequest('competitions/kpi');
+    };
+
+    service.getLatestIgImages = function() {
+        return _doApiRequest('instagram/recent');
+    };
+
+
+    // # Internal functions
+    function _doApiRequest(apiFunction) {
         return $q(function (resolve, reject) {
-            $http.get(conf.api.baseUrl + 'competitions/kpi').then(
+            $http.get(conf.api.baseUrl + apiFunction).then(
                 function success(response) {
                     resolve(response.data);
                 },
@@ -17,7 +28,7 @@ angular.module('konehuone.apiService', ['konehuone.conf'])
                 }
             );
         });
-    };
+    }
 
     return service;
 });

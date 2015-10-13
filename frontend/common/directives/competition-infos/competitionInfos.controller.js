@@ -12,7 +12,7 @@ angular.module('konehuone.competitionInfos')
         rc: true
     };
     $scope.compData = {};
-
+    $scope.igImages = [];
 
 
     // # Functions
@@ -20,6 +20,12 @@ angular.module('konehuone.competitionInfos')
         apiService.getCompetitionData().then(
             function success(compData) {
                 _.extend($scope.compData, compData);
+            }
+        );
+
+        apiService.getLatestIgImages().then(
+            function success(igImages) {
+                $scope.igImages = igImages;
             }
         );
     };

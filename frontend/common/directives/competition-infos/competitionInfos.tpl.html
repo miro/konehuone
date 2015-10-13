@@ -35,12 +35,19 @@
                 Osallistujia tähän mennessä: <span class="hilight">{{compData.ig.media_count}}</span>
             </h4>
             <ol>
-                <li>Etsi kadulta KonehuoneX-julsite tai flyeri, ja ota siitä kuva</li>
+                <li>Etsi kadulta KonehuoneX-juliste tai -flyeri, ja ota siitä kuva</li>
                 <li>(Jos et löydä julisteita tai käy pihalla, käytä vaihtoehtoisesti <a href="#">tätä kuvaa</a>)</li>
                 <li>Lähetä kuva Instagramiin käyttäen <span class="hilight">#konehuonex</span>-hashtagia</li>
             </ol>
             <p>31.10. klo 19 mennessä hashtagia käyttäneiden kesken arvotaan <span class="hilight">R-Collectionin tuotepalkinto</span> ja jotain-paasylippusettia.</p>
             <p>Tämän lisäksi tuomaristo valitsee hauskimman kuvan osanottajien joukosta, ja palkitsee heidät kahdella pääsylipulla tapahtumaan.</p>
+
+            <div class="ig-feed__wrapper">
+                <a class="ig__image__wrapper" ng-repeat="image in igImages" ng-href="{{image.link}}" target="_blank">
+                    <div class="ig__image" ng-style="{'background-image': 'url(' + image.thumbUrl + ')'}">
+                    <p class="ig__user">{{image.user}}</p>
+                </a>
+            </div>
         </div>
     </div>
 
