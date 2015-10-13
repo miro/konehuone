@@ -14,4 +14,18 @@ section#info {
     p { text-align: justify; }
     a { color: $orange; }
     .date-banner { width: 100%; }
+
+
+    .some-link__wrapper {
+        display: block;
+        padding: 5px;
+        margin-bottom: 5px;
+
+        background-color: $purple;
+        color: $white;
+
+        border-bottom: 0;
+
+        h4 { padding: 0; margin: 0; }
+    }
 }
