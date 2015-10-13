@@ -20,9 +20,7 @@
     "fbgraph": "^1.1.0",
     "instagram-node": "^0.5.8",
     "lodash": "^3.10.1",
-    "request": "^2.65.0"
-  },
-  "devDependencies": {
+    "request": "^2.65.0",
     "browser-sync": "^2.8.2",
     "del": "^1.2.0",
     "gulp": "^3.9.0",
