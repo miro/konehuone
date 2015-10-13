@@ -1,9 +1,10 @@
 <section class="competition-infos__wrapper" id="competitions" ng-init="init()">
     <h2>Kilpailut</h2>
-    <p>Voita lippuja ja yli 300€ arvosta yhteistyökumppaniemme tarjoamia tuotepalkintoja kolmessa eri kilpailussamme! Klikkaa kisannimeä nähdäksesi lisäinfoa.</p>
+    <p>Voita lippuja ja yli 300€ arvosta yhteistyökumppaniemme tarjoamia tuotepalkintoja kolmessa eri kilpailussamme! Klikkaa kisan nimeä nähdäksesi lisäinfoa.</p>
 
     <div class="competition__content competition__content--jj1" ng-class="{minimized: uiClosed.jj1}">
-        <div class="competition__header" ng-click="uiClosed.jj1 = !uiClosed.jj1">
+        <div class="competition__header" ng-click="uiClosed.jj1 = !uiClosed.jj1"
+            analytics-on="click" analytics-event="competion-jj1">
             <h2 class="competition__title"><span class="hilight">#1</span>: Konehuone Classics</h2>
             <p class="competition__powered-by">powered by</p>
             <img class="competition__sponsor" src="/assets/logo-jimnjill.png" alt="Jim&amp;Jill logo">
@@ -24,7 +25,8 @@
     </div>
 
     <div class="competition__content competition__content--rc" ng-class="{minimized: uiClosed.rc}">
-        <div class="competition__header" ng-click="uiClosed.rc = !uiClosed.rc">
+        <div class="competition__header" ng-click="uiClosed.rc = !uiClosed.rc"
+            analytics-on="click" analytics-event="competion-rc">
             <h2 class="competition__title"><span class="hilight">#2</span>: Instagram Tsunami</h2>
             <p class="competition__powered-by">powered by</p>
             <img class="competition__sponsor" src="/assets/logo-rcollection.png" alt="R-Collection logo">
@@ -43,7 +45,8 @@
             <p>Tämän lisäksi tuomaristo valitsee hauskimman kuvan osanottajien joukosta, ja palkitsee heidät kahdella pääsylipulla tapahtumaan.</p>
 
             <div class="ig-feed__wrapper">
-                <a class="ig__image__wrapper" ng-repeat="image in igImages" ng-href="{{image.link}}" target="_blank">
+                <a class="ig__image__wrapper" ng-repeat="image in igImages" ng-href="{{image.link}}" target="_blank"
+                    analytics-on="click" analytics-event="instagram-feed-link">
                     <div class="ig__image" ng-style="{'background-image': 'url(' + image.thumbUrl + ')'}">
                     <p class="ig__user">{{image.user}}</p>
                 </a>
@@ -52,7 +55,8 @@
     </div>
 
     <div class="competition__content competition__content--jj2" ng-class="{minimized: uiClosed.jj2}">
-        <div class="competition__header" ng-click="uiClosed.jj2 = !uiClosed.jj2">
+        <div class="competition__header" ng-click="uiClosed.jj2 = !uiClosed.jj2"
+            analytics-on="click" analytics-event="competion-jj2">
             <h2 class="competition__title"><span class="hilight">#3</span>: Facebook Roll Call</h2>
             <p class="competition__powered-by">powered by</p>
             <img class="competition__sponsor" src="/assets/logo-jimnjill.png" alt="Jim&amp;Jill logo">
