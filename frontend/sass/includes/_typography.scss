@@ -17,3 +17,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 span.hilight { color: $orange--dark; }
+
+// Link styles
+a, a:visited {
+    color: $white;
+    text-decoration: none;
+    border-bottom: 2px solid $orange;
+
+    transition: border-bottom 0.5s ease;
+}
+a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid $orange--dark;
+}
