@@ -9,7 +9,8 @@ body {
     max-width: $site-max-width;
 
     background-image: url("background-shuttle.jpg");
-    background-position: fixed;
+    background-attachment: fixed;
+    padding-bottom: 20px;
 }
 
 // These are what wraps "top level content"
