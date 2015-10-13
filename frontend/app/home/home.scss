@@ -10,6 +10,8 @@
 }
 
 
-section.info {
-
+section#info {
+    p { text-align: justify; }
+    a { color: $orange; }
+    .date-banner { width: 100%; }
 }
