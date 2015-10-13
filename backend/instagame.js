@@ -31,4 +31,28 @@ service.getTagInfo = function(tagName) {
     })
 };
 
+
+service.getRecentImages = function(tagName, amount) {
+    amount = amount || 6;
+
+    return new Promise(function(resolve, reject) {
+        ig.tag_media_recent(tagName, function(err, medias, pagination, remaining, limit) {
+            if (err) {
+                reject(err)
+            } else {
+                medias = medias.slice(0, amount);
+
+                var parsedMedias = _.map(medias, function(media) {
+                    return {
+                        thumbUrl: media.images.thumbnail.url,
+                        user: '@' + media.user.username,
+                        link: media.link
+                    }
+                });
+
+                resolve(parsedMedias);
+            }
+        });
+    });
+};
 module.exports = service;

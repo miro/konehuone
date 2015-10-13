@@ -33,6 +33,17 @@ app.get('/api/competitions/kpi', function(req, res) {
     });
 });
 
+app.get('/api/instagram/recent', function(req, res) {
+    instagame.getRecentImages('konehuonex', 6)
+    .then(function(medias) {
+        res.send(medias);
+    })
+    .error(function(error) {
+        console.log('Error on Instagram recent fetch', error);
+        res.sendStatus(500);
+    });
+});
+
 
 // # Static file serving
 // TODO: use /dist on production
