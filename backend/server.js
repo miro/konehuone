@@ -2,6 +2,7 @@
 var express         = require('express');
 var app             = express();
 var Promise         = require('bluebird');
+var path            = require('path');
 
 var facebook        = require('./facebook');
 var instagame       = require('./instagame');
@@ -47,10 +48,12 @@ app.get('/api/instagram/recent', function(req, res) {
 
 // # Static file serving
 // TODO: use /dist on production
-app.use('/', express.static('../build/'));
-app.use('/bower_components', express.static('../bower_components/'));
+app.use('/', express.static(path.join(__dirname, '../build/')));
+app.use('/bower_components', express.static(path.join(__dirname, '../bower_components/')));
 
 
 console.log('### Konehuone Server started!');
 console.log('on port', serverPort);
 app.listen(serverPort);
+
+
