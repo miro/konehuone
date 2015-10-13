@@ -1,6 +1,6 @@
 <section class="competition-infos__wrapper" id="competitions" ng-init="init()">
-    <h2>Competitions</h2>
-    <p>Win tickets, pöytäjotaintms and over 300€ worth of goodies from our sponsors! Read more info from below</p>
+    <h2>Kilpailut</h2>
+    <p>Voita lippuja ja yli 300€ arvosta yhteistyökumppaniemme tarjoamia tuotepalkintoja kolmessa eri kilpailussamme! Klikkaa kisannimeä nähdäksesi lisäinfoa.</p>
 
     <div class="competition__content competition__content--jj1" ng-class="{minimized: uiClosed.jj1}">
         <div class="competition__header" ng-click="uiClosed.jj1 = !uiClosed.jj1">
@@ -11,9 +11,15 @@
 
         <div class="competition__desc">
             <h4 class="competition__state">
-                Competition entries: <span class="hilight">{{compData.fb.eventPosts}}</span>
+                Osallistujia tähän mennessä: <span class="hilight">{{compData.fb.eventPosts}}</span>
             </h4>
-            <p>jfaiodjif asjoifijoasd jiofasjiojoi ajsiojioadsjfiof as</p>
+            <ol>
+                <li>Valitse paras / mielestäsi kuvaavin Konehuone-klassikkokappale</li>
+                <li>Linkkaa kappale <a href="https://www.facebook.com/events/1756954314531757/" target="_blank">Facebook-tapahtumaamme</a></li>
+            </ol>
+            <p>Tapahtuman seinällä eniten peukkuja kerännyt kappale voittaa <span class="hilight">100€ lahjakortin Kajaanin Jim&amp;Jill:iin</span> ja jotain-ilmaista-sisäänpääsyä-mitäs-tarttis!</p>
+            <p>Tämän lisäksi tuomaristo valitsee erikoisemman osanottopostin ja palkitsee sen lähettäjän kahdella pääsylipulla tapahtumaan.</p>
+
         </div>
     </div>
 
@@ -26,9 +32,15 @@
 
         <div class="competition__desc">
             <h4 class="competition__state">
-                Competition entries: <span class="hilight">{{compData.ig.media_count}}</span>
+                Osallistujia tähän mennessä: <span class="hilight">{{compData.ig.media_count}}</span>
             </h4>
-            <p>jfaiodjif asjoifijoasd jiofasjiojoi ajsiojioadsjfiof as</p>
+            <ol>
+                <li>Etsi kadulta KonehuoneX-julsite tai flyeri, ja ota siitä kuva</li>
+                <li>(Jos et löydä julisteita tai käy pihalla, käytä vaihtoehtoisesti <a href="#">tätä kuvaa</a>)</li>
+                <li>Lähetä kuva Instagramiin käyttäen <span class="hilight">#konehuonex</span>-hashtagia</li>
+            </ol>
+            <p>31.10. klo 19 mennessä hashtagia käyttäneiden kesken arvotaan <span class="hilight">R-Collectionin tuotepalkinto</span> ja jotain-paasylippusettia.</p>
+            <p>Tämän lisäksi tuomaristo valitsee hauskimman kuvan osanottajien joukosta, ja palkitsee heidät kahdella pääsylipulla tapahtumaan.</p>
         </div>
     </div>
 
@@ -41,13 +53,13 @@
 
         <div class="competition__desc">
             <h4 class="competition__state">
-                Competition entries: <span class="hilight">{{compData.fb.eventAttendees}}</span>
+                Osallistujia tähän mennessä: <span class="hilight">{{compData.fb.eventAttendees}}</span>
             </h4>
-            <p>jfaiodjif asjoifijoasd jiofasjiojoi ajsiojioadsjfiof as</p>
+            <ol>
+                <li>Merkitse itsesi saapuvaksi <a href="https://www.facebook.com/events/1756954314531757/" target="_blank">Facebook-tapahtumaamme</a></li>
+                <li>Ei muuta!</li>
+            </ol>
+            <p>Tapahtuman osallistujien kesken arvotaan <span class="hilight">80€ lahjakortin Kajaanin Jim&amp;Jill:iin</span> ja jotain-ilmaista-sisäänpääsyä-mitäs-tarttis</p>
         </div>
     </div>
-
-
-
-    {{compData | json}}
 </section>
