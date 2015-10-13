@@ -13,6 +13,7 @@ var FB_EVENT_ID = '1756954314531757';
 // # Configuration
 var environment = process.env.NODE_ENV || 'development';
 var serverPort = process.env.PORT || 6001;
+var frontendDir = (environment === 'development') ? '../build/' : '../dist/';
 
 
 // # Fetch
@@ -47,12 +48,12 @@ app.get('/api/instagram/recent', function(req, res) {
 
 
 // # Static file serving
-// TODO: use /dist on production
-app.use('/', express.static(path.join(__dirname, '../build/')));
-app.use('/bower_components', express.static(path.join(__dirname, '../bower_components/')));
+
+app.use('/', express.static(path.join(__dirname, frontendDir)));
+app.use('/bower_components', express.static(path.join(__dirname, '../bower_components')));
 
 
-console.log('### Konehuone Server started!');
+console.log('### Konehuone Server started on environment', environment, '!');
 console.log('on port', serverPort);
 app.listen(serverPort);
 
