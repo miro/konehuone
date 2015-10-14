@@ -2,5 +2,6 @@
 
 angular.module('konehuone.home', [
     'ui.router',
-    'konehuone.competitionInfos'
+    'konehuone.competitionInfos',
+    'konehuone.djInfos'
 ]);

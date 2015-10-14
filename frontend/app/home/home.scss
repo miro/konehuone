@@ -22,17 +22,17 @@ section#info {
         display: block;
         margin: 0 auto;
     }
+}
 
-    .some-link__wrapper {
-        display: block;
-        padding: 5px;
-        margin-bottom: 5px;
+.some-link__wrapper {
+    display: block;
+    padding: 5px;
+    margin-bottom: 5px;
 
-        background-color: $purple;
-        color: $white;
+    background-color: $purple;
+    color: $white;
 
-        border-bottom: 0;
+    border-bottom: 0;
 
-        h4 { padding: 0; margin: 0; }
-    }
+    h4 { padding: 0; margin: 0; }
 }

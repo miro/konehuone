@@ -1,0 +1,41 @@
+$dj-title-height: 30px;
+$dj-pic-height: 350px;
+$dj-unopened-height: $dj-title-height + $dj-pic-height;
+
+.dj-info__wrapper {
+    transition: max-height 0.5s;
+    transition: border-width 0.5s;
+
+    max-height: $dj-unopened-height;
+    overflow: hidden;
+
+    border-bottom: 10px solid $purple;
+
+    &.opened {
+        max-height: 9999px;
+        border-bottom-width: 0;
+    }
+
+}
+
+.dj-info__header {
+    background-color: $purple;
+    padding: 10px 0;
+}
+
+.dj-info__title {
+    margin: 0 0 0 10px;
+    height: $dj-title-height;
+}
+.dj-info__pic {
+    background-size: cover;
+    background-position: top center;
+    margin: 0 10px;
+    box-model: border-box;
+
+    height: $dj-pic-height;
+}
+
+.dj-info__link {
+    @extend .some-link__wrapper;
+}
