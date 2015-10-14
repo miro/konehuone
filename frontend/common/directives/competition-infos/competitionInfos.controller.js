@@ -7,9 +7,9 @@ angular.module('konehuone.competitionInfos')
 
     // # Variables
     $scope.uiClosed = {
-        jj1: true,
-        jj2: true,
-        rc: true
+        jj1: false,
+        jj2: false,
+        rc: false
     };
     $scope.compData = {};
     $scope.igImages = [];
