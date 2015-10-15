@@ -49,7 +49,7 @@ angular.module('konehuone.djInfos')
             ],
 
             links: [
-                { url: 'https://fb.com/retrome', title: 'Facebook' },
+                { url: 'https://fb.com/djretrome', title: 'Facebook' },
                 { url: 'https://mixcloud.com/retrome', title: 'Mixcloud' },
                 { url: 'https://soundcloud.com/retrome', title: 'Soundcloud' }
             ]
@@ -63,7 +63,7 @@ angular.module('konehuone.djInfos')
             ],
 
             links: [
-                { url: 'https://fb.com/epeli', title: 'Facebook' },
+                { url: 'https://fb.com/djepeli', title: 'Facebook' },
                 { url: 'https://mixcloud.com/djepeli', title: 'Mixcloud' }
             ]
         }
