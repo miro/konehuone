@@ -11,9 +11,16 @@ $dj-unopened-height: $dj-title-height + $dj-pic-height;
 
     border-bottom: 10px solid $purple;
 
+    margin-bottom: 30px;
+
     &.opened {
         max-height: 9999px;
         border-bottom-width: 0;
+    }
+
+    &.headliner {
+        border-bottom-color: $orange;
+        .dj-info__header { background-color: $orange; }
     }
 
 }
