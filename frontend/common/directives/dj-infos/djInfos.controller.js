@@ -36,7 +36,7 @@ angular.module('konehuone.djInfos')
             links: [
                 { url: 'https://fb.com/ncmpl', title: 'Nocomply @ Facebook' },
                 { url: 'https://mixcloud.com/nocomply', title: 'Nocomply @ Mixcloud' },
-                { url: 'https://www.mixcloud.com/DJKillroy/suck-my-beat/', title: 'Nino\'s Promomix' }
+                { url: 'https://www.mixcloud.com/DJNiN0/', title: 'Nino @ Mixcloud' }
             ],
         },
 
