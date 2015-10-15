@@ -1,0 +1,32 @@
+// Archive font import from http://www.fontfabric.com/archive-free-font/
+@font-face {
+    font-family: Archive;
+    src: url("/assets/archive.otf") format("opentype");
+}
+
+// General font styles
+body {
+    font-family: helvetica, arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    // Archive is capital-only -font, uppercase all headers in case Archive can't
+    // be loaded
+    font-family: "Archive", "Arial Black", "Arial", sans-serif;
+    text-transform: uppercase;
+}
+
+span.hilight { color: $orange--dark; }
+
+// Link styles
+a, a:visited {
+    color: $white;
+    text-decoration: none;
+    border-bottom: 2px solid $orange;
+
+    transition: border-bottom 0.5s ease;
+}
+a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid $orange--dark;
+}

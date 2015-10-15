@@ -1,0 +1,38 @@
+.hero__wrapper {
+    width: 100%;
+    margin: 0 auto 10px auto;
+
+    img.hero__image { width: 100%; }
+
+    // infos in header elements can be found from hero image -> hide these
+    // (it is better for SEO that site has meaningful H1)
+    h1,h3,h5 { display: none; }
+}
+
+
+section#info {
+    a { color: $orange; }
+
+    .genres { text-align: center; }
+
+    .date-banner {
+        width: 100%;
+        max-width: 270px;
+
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.some-link__wrapper {
+    display: block;
+    padding: 5px;
+    margin-bottom: 5px;
+
+    background-color: $purple;
+    color: $white;
+
+    border-bottom: 0;
+
+    h4 { padding: 0; margin: 0; }
+}

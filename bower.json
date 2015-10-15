@@ -1,0 +1,22 @@
+{
+  "name": "konehuone-www",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "vendor"
+  ],
+  "dependencies": {
+    "angular": "~1.4.3",
+    "angular-bootstrap": "~0.13.1",
+    "angular-mocks": "~1.4.3",
+    "angular-ui-router": "0.2.15",
+    "bootstrap-sass": "3.3.5",
+    "animate.css": "~3.3.0",
+    "viewports": "~0.6.4",
+    "angular-translate": "~2.8.1",
+    "ng-lodash": "~0.2.3",
+    "angulartics": "~0.20.1",
+    "angulartics-google-analytics": "~0.1.1"
+  }
+}

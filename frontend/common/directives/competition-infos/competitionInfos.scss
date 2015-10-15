@@ -1,0 +1,119 @@
+.competition-infos__wrapper {
+
+}
+
+.competition__content {
+    margin: 0 auto 20px auto;
+    width: 100%;
+    max-width: 400px;
+
+    cursor: pointer;
+
+    &.minimized {
+        .competition__desc { display: none; }
+    }
+
+}
+
+.competition__header {
+    width: 100%;
+    min-height: 60px;
+
+    padding-top: 5px;
+
+    background-color: rgba($purple, 0.8);
+    border-top: 10px solid $purple;
+    border-bottom: 8px solid $purple;
+
+    .competition__title {
+        text-align: center;
+        margin: 5px;
+    }
+
+    .competition__powered-by {
+        text-align: center;
+        font-size: 10px;
+        margin-bottom: 0;
+    }
+
+    .competition__sponsor {
+        display: block;
+        height: 60px;
+
+        margin: 0 auto;
+
+        &:before {
+            content: 'by';
+            font-size: 15px;
+            margin: 0 5px 0 15px;
+        }
+    }
+}
+
+
+.competition__desc {
+    background-color: rgba($purple, 0.5);
+
+    .competition__state {
+        margin-top: 0;
+        background-color: $purple;
+        text-align: center;
+        padding: 5px 0 10px 0;
+
+        .hilight {
+            font-size: 25px;
+        }
+    }
+
+    p { padding: 0 10px 10px 10px; }
+    li { margin-bottom: 5px; }
+}
+
+.ig-feed__wrapper {
+    overflow: hidden;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.ig__image__wrapper {
+    position: relative;
+    float: left;
+
+    margin-right: 9%;
+    &:nth-child(even) { margin-right: 0; }
+    margin-bottom: 15px;
+
+    width: 45%;
+    max-width: 150px;
+    height: 150px;
+
+    border-bottom: 0;
+
+    .ig__image {
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: 0; left: 0;
+
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .ig__user {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        border-top: 2px solid $purple;
+
+        display: block;
+        margin: 0 0 0 0;
+        padding: 5px;
+        background-color: rgba($black, 0.7);
+    }
+}
+
+

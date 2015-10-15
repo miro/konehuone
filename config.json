@@ -1,0 +1,30 @@
+{
+    "app"   : "frontend",
+    "build" : "build",
+    "dist"  : "dist",
+
+    "paths" : {
+        "scripts": [
+          "frontend/+(app|common)/**/*.module.js",
+          "frontend/+(app|common)/**/*.js",
+          "!frontend/+(app|common)/**/*.spec.js"
+        ],
+        "templates": [
+            "frontend/app/**/*.tpl.html",
+            "frontend/common/**/*.tpl.html"
+        ],
+        "sass"   : "frontend/+(sass|app|common)/**/*.scss",
+        "assets" : "frontend/assets/**",
+        "html"   : "frontend/index.html",
+        "tests"  : "frontend/+(app|common)/**/*.spec.js"
+    },
+
+    "bower": {
+        "json": "./bower.json",
+        "directory": "./bower_components/",
+        "exclude": [
+            "jquery",
+            "bower_components/bootstrap-sass/assets/javascripts"
+        ]
+    }
+}

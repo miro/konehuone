@@ -1,0 +1,29 @@
+body {
+    background-color: $black;
+    color: $white;
+}
+
+.site__wrapper {
+    margin: 0 auto;
+    width: 90%;
+    max-width: $site-max-width;
+
+    background-image: url("background-shuttle.jpg");
+    background-attachment: fixed;
+    padding-bottom: 20px;
+}
+
+// These are what wraps "top level content"
+section {
+    width: 96%;
+    max-width: 960px;
+
+    margin: 0 auto 30px auto;
+    padding: 10px 10px;
+
+    background-color: rgba($black, 0.7);
+}
+
+
+// # Utility classes
+.hidden { display: none; }

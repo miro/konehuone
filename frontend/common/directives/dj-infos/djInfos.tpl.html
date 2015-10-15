@@ -1,0 +1,21 @@
+<section class="dj-infos__wrapper" id="djs" ng-init="init()">
+    <h2>Lineup</h2>
+
+    <div class="dj-info__wrapper" ng-repeat="dj in djData"
+        ng-class="{ opened: dj.uiOpened, headliner: dj.isHeadliner }">
+
+        <div class="dj-info__header" ng-click="dj.uiOpened = !dj.uiOpened">
+            <h3 class="dj-info__title">{{ dj.name }}</h3>
+            <div class="dj-info__pic"
+                ng-style="{'background-image': 'url('+dj.picUrl+')'}"></div>
+        </div>
+
+        <p ng-repeat="bioParagraph in dj.bio">{{ bioParagraph }}</p>
+
+        <div class="dj-info__link" ng-repeat="link in dj.links">
+            <a ng-href="{{ link.url }}">
+                <h4>{{ link.title }}</h4>
+            </a>
+        </div>
+    </div>
+</section>
