@@ -9,13 +9,18 @@ angular.module('konehuone.djInfos')
         wispy: {
             name: 'Wispy',
             picUrl: '/assets/dj-wispy.jpg',
-            bio: ['Wispy aka Ville Penttinen on tamperelainen pitkän linjan dj-moniottelija. Lähes viisitoista vuotta kestäneen uransa aikana hän on järjestänyt ja ollut soittamassa lukemattomissa tapahtumissa. Oma Steps nimeä kantava klubi-ilta Tampereella, Double Drop -klubi Helsingin mbarissa yhdessä Maticin kanssa, yksi legendaarisen Plauge-kollektiivin jäsenistä ja viisi YleX:lle toimitettua XmiXiä puhuvat puolestaan. Tällä hetkellä Wispyä kuulee vakituisesti Bassoradiolla, jossa hän, Rico Tubbs ja Kimik vetävät Etkoplasma-nimistä showta joka toinen lauantai-ilta.'],
+            bio: [
+                'Wispy aka Ville Penttinen on tamperelainen pitkän linjan DJ-moniottelija. Lähes viisitoista vuotta kestäneen uransa aikana hän on järjestänyt ja ollut soittamassa lukemattomissa tapahtumissa. Oma Steps nimeä kantava klubi-ilta Tampereella, Double Drop -klubi Helsingin mbarissa yhdessä Maticin kanssa, yksi legendaarisen Plauge-kollektiivin jäsenistä ja viisi YleX:lle toimitettua XmiXiä puhuvat puolestaan.',
+                'Wispy nousi konemusakansan huulille viimeistään vuonna 2008, jolloin hän voitti silloisen Suomen suurimman DJ-skaban, Laserpoint-tapahtuman DJ-kilpailun. Vuosien mittaan hän on tuonut Suomeen isoja drum&bass nimiä kuten Sigma, ShockOne ja A Sides, korkannut YleX:n perjantai-illan XmiXin ensimmäisenä artistina vuonna 2011 ja viihdyttänyt yleisöä sadoilla keikoilla Tampereella ja muualla Suomessa. Wispyä voi luonnehtia käveleväksi musiikin tietokirjaksi - ja sen voi kuulla lauantaina 31. päivä Kajaanissa.',
+                'Tällä hetkellä Wispyä kuulee  DJ-keikkojen lisäksi vakituisesti Bassoradiolla, jossa hän, Rico Tubbs ja Kimik vetävät Etkoplasma-nimistä showta joka toinen lauantai-ilta.'
+            ],
             isHeadliner: true,
 
             links: [
                 { url: 'https://fb.com/wispyfin', title: 'Facebook' },
                 { url: 'https://mixcloud.com/wispy', title: 'Mixcloud' },
-                { url: 'http://mbar.fi/artists/446/', title: 'Wispy\'s bio @ mbar.fi'}
+                { url: 'http://mbar.fi/artists/446/', title: 'Wispy\'s bio @ mbar.fi' },
+                { url: 'https://www.mixcloud.com/Kimik/etkoplasma-03102015-bassoradio-hosted-by-rico-tubbs-kimik-wispy/', title: 'Etkoplasma @ Mixcloud' }
             ],
         },
 
@@ -54,8 +59,7 @@ angular.module('konehuone.djInfos')
             name: 'Epeli',
             picUrl: '/assets/dj-epeli.jpg',
             bio: [
-                'Paltamon kasvatti, nykyisin Tampereella vaikuttava Retrome löysi tiensä cd-soittimien ja mikserin taakse 2011 ja on edelleen samalla tiellä. Nuoren miehen intohimo musiikkiin ja etenkin drum & bassiin on ajanut eteenpäin musiikin parissa. Kolmen vuoden ajan hän on vaikuttanut Tampereella Spinnin riveissä ja tänä vuonna hänet on voinut nähdä mm. Helsingissä mbarin terassilla Double Drop -klubin vieraana sekä Tampere Drum & Bass Conventioneissa.',
-                'Konehuoneessa häneltä kuullaan erityisselektio & erityissekoitus viiden vuoden takaisia elektrohittejä Justicesta MGMT:hen, tuoreempaa tavaraa Nerosta A-Trakiin ja siitä väliltä kaikkea tiukimpiin drum&bass järkäleisiin saakka.'
+                'Kutosen Resident-DJ:n titteliä jo neljättä vuotta ylpeänä kantanut Epeli on nuoresta iästään huolimatta puskenut itsensä jo monille klubikeikoille & kiertueille ympäri Suomen. Epelin seteissä yhdistyy teknisyys, tiukat bassovoittoiset rallit ja nopeat vaihdot, mitkä pitävät tanssilattian liekeissä alusta loppuun asti.'
             ],
 
             links: [
