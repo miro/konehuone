@@ -7,6 +7,8 @@ $dj-unopened-height: $dj-title-height + $dj-pic-height;
     transition: border-width 0.5s;
 
     max-height: $dj-unopened-height;
+    @include viewports(medium large) { max-height: $dj-unopened-height + 100px; }
+
     overflow: hidden;
 
     border-bottom: 10px solid $purple;
@@ -41,6 +43,7 @@ $dj-unopened-height: $dj-title-height + $dj-pic-height;
     box-model: border-box;
 
     height: $dj-pic-height;
+    @include viewports (medium large) { height: $dj-pic-height + 100px; }
 }
 
 .dj-info__link {
