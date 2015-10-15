@@ -70,7 +70,9 @@ angular.module('konehuone.djInfos')
 
         // add uiOpened vars for each dj
         for (var dj in $scope.djData) {
-            $scope.djData[dj].uiOpened = false;
+            if ($scope.djData.hasOwnProperty(dj)) {
+                $scope.djData[dj].uiOpened = false;
+            }
         }
     };
 });
